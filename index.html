@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .winner{
+      color: green;
+    }
+
+    .loser{
+      color: red;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    div{
+      margin: 100px;
+      padding: 20px;
+      width: 250px;
+      border: 2px solid black;
+    }
+    button{
+      padding: 5px;
+      font-size: medium;
+      margin-top: 5px;
+    }
+
+    #p1btn{
+      background-color: greenyellow;
+    }
+
+    #p2btn{
+      background-color: lightskyblue;
+    }
+
+    #reset{
+      background-color: rgb(203, 70, 70);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="./anupam painting.png" alt="img" width="250px">
+    <p><b>Ping pong score keeper</b></p>
+    <h1><span id="p1score">0</span> to <span id="p2score">0</span></h1>
+    <p>Use the buttons to update the score</p>
+    <select name="" id="playto">
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select>
+    <button id="p1btn">+1 Player 1</button>
+    <button id="p2btn">+1 Player 2</button>
+    <button id="reset">reset</button>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
