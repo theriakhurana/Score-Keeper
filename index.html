@@ -16,17 +16,27 @@
     body{
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(1, 24, 30);
     }
     div{
+      background-color: #fdfafa;
       margin: 100px;
       padding: 20px;
-      width: 250px;
-      border: 2px solid black;
+      width: 300px;
+      border-radius: 2.5rem;
+      box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
     }
     button{
       padding: 5px;
       font-size: medium;
       margin-top: 5px;
+    }
+
+    img{
+      width: 100%;
     }
 
     #p1btn{
@@ -40,12 +50,13 @@
     #reset{
       background-color: rgb(203, 70, 70);
     }
+
   </style>
 </head>
 <body>
   <div>
     <img src="./anupam painting.png" alt="img" width="250px">
-    <p><b>Ping pong score keeper</b></p>
+    <h2>Ping pong score keeper</h2>
     <h1><span id="p1score">0</span> to <span id="p2score">0</span></h1>
     <p>Use the buttons to update the score</p>
     <select name="" id="playto">
